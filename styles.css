@@ -1,3 +1,7 @@
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.8);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +10,10 @@
 
 #content {
     width: 100vw;
+    height: 100vh;
+    background: url('./soup01.jpg') no-repeat center center fixed;;
+    background-size: cover;
+    justify-content: space-between;
 }
 
 .flex-container {
@@ -16,12 +24,13 @@
 
 #header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--overlay-color);
 }
 #tabs {
-
+    width: 50%;
+    background-color: var(--overlay-color);
 }
 #footer {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--overlay-color);
 }
