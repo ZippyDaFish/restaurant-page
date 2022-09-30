@@ -8,9 +8,18 @@
     box-sizing: border-box;
 }
 
+.text-main {
+    font-size: 24px;
+    color: white;
+}
+.text-greater {
+    font-size: 40px;
+    color: white;
+}
+
 #content {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: url('./soup01.jpg') no-repeat center center fixed;;
     background-size: cover;
     justify-content: space-between;
@@ -26,11 +35,32 @@
     width: 100%;
     background-color: var(--overlay-color);
 }
-#tabs {
-    width: 50%;
+#header > * {
+    margin: 10px;
+}
+#main {
+    width: 40%;
+    margin: 20px;
     background-color: var(--overlay-color);
 }
 #footer {
     width: 100%;
     background-color: var(--overlay-color);
+}
+
+.button-nav {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+.button-nav:hover {
+    transform: translateY(-10%);
+    border-bottom: 3px solid white;
+}
+
+#home {
+    height: 700px;
+    justify-content: space-evenly;
 }
