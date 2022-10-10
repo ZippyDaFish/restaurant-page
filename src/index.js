@@ -1,8 +1,6 @@
-console.log("Everything seems to be working");
-
 const content = document.getElementById('content');
 
-const headerMod = (() => {
+const page = (() => {
     const createHeader = () => {
         const div = document.createElement("div");
         div.setAttribute('id', "header");
@@ -16,9 +14,24 @@ const headerMod = (() => {
         </nav>
         `;
         content.appendChild(div);
-        console.log("no blockage");
     };
-    return[createHeader];
+    const createMain = () => {
+        const div = document.createElement("div");
+        div.setAttribute('id', "main");
+        content.appendChild(div);
+    };
+    const createFooter = () => {
+        const div = document.createElement("div");
+        div.setAttribute('id', "footer");
+        div.setAttribute('class', "flex-container");
+        div.innerHTML = `
+        <p class="text-main">Copyright © 2022 ZippyDaFish</p>
+        `;
+        content.appendChild(div);
+    };
+    return{createHeader, createMain, createFooter};
 })();
 
-headerMod.createHeader();
+page.createHeader();
+page.createMain();
+page.createFooter();
