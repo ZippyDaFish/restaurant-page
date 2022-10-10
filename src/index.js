@@ -1,6 +1,5 @@
-const content = document.getElementById('content');
-
 const page = (() => {
+    const content = document.getElementById('content');
     const createHeader = () => {
         const div = document.createElement("div");
         div.setAttribute('id', "header");
@@ -8,9 +7,9 @@ const page = (() => {
         div.innerHTML = `
         <p class="text-greater">Oops, All Soups</p>
         <nav>
-            <button class="button-nav text-main">Home</button>
-            <button class="button-nav text-main">Menu</button>
-            <button class="button-nav text-main">Contact</button>
+            <button id="nav-home" class="button-nav text-main">Home</button>
+            <button id="nav-menu" class="button-nav text-main">Menu</button>
+            <button id="nav-contact" class="button-nav text-main">Contact</button>
         </nav>
         `;
         content.appendChild(div);
@@ -35,3 +34,22 @@ const page = (() => {
 page.createHeader();
 page.createMain();
 page.createFooter();
+
+const tabs = (() => {
+    const main = document.getElementById('main');
+    const navHome = () => {
+        main.innerHTML = `
+        <div id="home" class="flex-container">
+            <p class="text-main">Best soup in town</p>
+            <p class="text-main">Made with love since 2003</p>
+            <img width="50%" height="50%">
+            <p class="text-main">Order online or visit us at a location near you</p>
+        </div>
+    `;
+    };
+    return{navHome};
+})();
+
+tabs.navHome();
+
+document.getElementById("nav-home").addEventListener('click', function(){tabs.navHome();});
