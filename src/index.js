@@ -53,7 +53,17 @@ const tabs = (() => {
     };
     const navContact = () => {
         main.innerHTML = `
-        `;
+        <div id="contact" class="flex-container">
+            <div>
+                <p class="text-main">Contact us at:</p>
+                <p class="text-main">123-456-7890</p>
+            </div>
+            <div>
+                <p class="text-main">Or visit us at:</p>
+                <p class="text-main">Main Street, New York, USA</p>
+            </div>
+        </div>
+    `;
     };
     return{navHome, navMenu, navContact};
 })();
