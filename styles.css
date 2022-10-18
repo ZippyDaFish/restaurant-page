@@ -18,7 +18,6 @@
 }
 
 #content {
-    width: 100vw;
     min-height: 100vh;
     background: url('./soup01.jpg') no-repeat center center fixed;;
     background-size: cover;
