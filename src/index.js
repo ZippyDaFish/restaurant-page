@@ -47,9 +47,19 @@ const tabs = (() => {
         </div>
     `;
     };
-    return{navHome};
+    const navMenu = () => {
+        main.innerHTML = `
+        `;
+    };
+    const navContact = () => {
+        main.innerHTML = `
+        `;
+    };
+    return{navHome, navMenu, navContact};
 })();
 
 tabs.navHome();
 
 document.getElementById("nav-home").addEventListener('click', function(){tabs.navHome();});
+document.getElementById("nav-menu").addEventListener('click', function(){tabs.navMenu();});
+document.getElementById("nav-contact").addEventListener('click', function(){tabs.navContact();});
