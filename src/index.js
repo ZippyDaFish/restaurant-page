@@ -49,6 +49,16 @@ const tabs = (() => {
     };
     const navMenu = () => {
         main.innerHTML = `
+        <div id="menu" class="grid-container">
+            <div>
+                <img src="./chicken.jpg">
+                <p>Chicken</p>
+            </div>
+            <div>
+                <img src="./chiliNoodle.jpg">
+                <p>Chili Noodle</p>
+            </div>
+        </div>
         `;
     };
     const navContact = () => {
