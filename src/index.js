@@ -42,7 +42,7 @@ const tabs = (() => {
         <div id="home" class="flex-container">
             <p class="text-main">Best soup in town</p>
             <p class="text-main">Made with love since 2003</p>
-            <img width="50%" height="50%">
+            <img width="50%" height="50%" src="./chef.png">
             <p class="text-main">Order online or visit us at a location near you</p>
         </div>
     `;
@@ -52,11 +52,19 @@ const tabs = (() => {
         <div id="menu" class="grid-container">
             <div>
                 <img src="./chicken.jpg">
-                <p>Chicken</p>
+                <p class="text-main">Chicken</p>
             </div>
             <div>
                 <img src="./chiliNoodle.jpg">
-                <p>Chili Noodle</p>
+                <p class="text-main">Chili Noodle</p>
+            </div>
+            <div>
+                <img src="./koreanSpicySeafood.jpg">
+                <p class="text-main">Korean Spicy Seafood</p>
+            </div>
+            <div>
+                <img src="./phoGa.jpg">
+                <p class="text-main">Pho Ga</p>
             </div>
         </div>
         `;
